@@ -1,0 +1,43 @@
+<template>
+  <div class="footer">
+    <div class="socials">
+      <a href="https://www.facebook.com/kellysalterations/"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+      <a href="https://www.instagram.com/kellys.alterations"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <!-- <a href="https://www.yelp.com"><i class="fab fa-yelp"></i></a> -->
+    </div>
+    <div>
+      <p>&copy; Copyright Kelly's Alterations 2021</p>
+    </div>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+.footer {
+  padding-top: 2rem;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  color: inherit;
+}
+.socials {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 15%;
+
+  & a {
+    font-size: 3rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+  }
+}
+</style>
