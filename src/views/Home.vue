@@ -46,7 +46,6 @@ export default {
     -webkit-box-shadow: 1px 8px 24px 3px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 1px 8px 24px 3px rgba(0, 0, 0, 0.75);
     box-shadow: 1px 8px 24px 3px rgba(0, 0, 0, 0.75);
-    /* border: 1px solid black; */
   }
 }
 

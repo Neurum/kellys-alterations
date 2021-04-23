@@ -13,6 +13,14 @@
       <p>&copy; Copyright Kelly's Alterations 2021</p>
     </div>
   </div>
+  <!-- <div class="contact-modal">
+    <div class="modal">
+      <p>Contact</p>
+    </div>
+    <div class="contact-link">
+      <p>Book Now</p>
+    </div>
+  </div> -->
 </template>
 
 <style lang="scss" scoped>
@@ -38,6 +46,29 @@
     text-decoration: none;
     color: inherit;
     font-family: inherit;
+  }
+}
+
+.contact-modal {
+  position: relative;
+}
+
+.modal {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  right: 11%;
+  bottom: -2rem;
+  width: 20rem;
+  height: 13rem;
+  background-color: #2f2f2f;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  & p {
+    font-size: 2rem;
+    color: #fcecdd;
+    padding-top: 1rem;
   }
 }
 </style>
