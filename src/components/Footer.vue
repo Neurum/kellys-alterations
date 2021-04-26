@@ -32,9 +32,9 @@
   justify-content: space-between;
   align-items: center;
   height: 8rem;
-  color: inherit;
 }
 .socials {
+  color: #2f2f2f;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;

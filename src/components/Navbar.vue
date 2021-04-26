@@ -45,6 +45,7 @@ export default {
   position: relative;
   font-size: 5rem;
   font-family: 'Dancing Script', cursive;
+  color: #2f2f2f;
 }
 
 .first-letter {
