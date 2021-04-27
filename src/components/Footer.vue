@@ -1,12 +1,8 @@
 <template>
   <div class="footer">
     <div class="socials">
-      <a href="https://www.facebook.com/kellysalterations/"
-        ><i class="fab fa-facebook-f"></i
-      ></a>
-      <a href="https://www.instagram.com/kellys.alterations"
-        ><i class="fab fa-instagram"></i
-      ></a>
+      <a href="https://www.facebook.com/kellysalterations/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/kellys.alterations"><i class="fab fa-instagram"></i></a>
       <!-- <a href="https://www.yelp.com"><i class="fab fa-yelp"></i></a> -->
     </div>
     <div>
@@ -69,6 +65,37 @@
     font-size: 2rem;
     color: #fcecdd;
     padding-top: 1rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .footer {
+    padding-left: 3rem;
+  }
+  .socials {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer {
+    padding-left: 6rem;
+  }
+  .socials {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    padding-left: 8rem;
+    padding-top: 6rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer {
+    padding-left: 12rem;
+    padding-top: 5rem;
+  }
+  .socials {
+    width: 40%;
   }
 }
 </style>

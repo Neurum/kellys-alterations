@@ -12,8 +12,7 @@
       <img src="../assets/images/kelly-portrait.jpg" alt="portrait-image" />
 
       <h2>
-        Alterations for men, women and children. If you can imagine it, I will
-        create it.
+        Alterations for men, women and children. If you can imagine it, I will create it.
       </h2>
     </div>
   </div>
@@ -35,7 +34,6 @@ export default {
     width: 33%;
   }
 }
-
 .photos {
   position: relative;
 
@@ -48,7 +46,6 @@ export default {
     box-shadow: 1px 8px 24px 3px rgba(0, 0, 0, 0.75);
   }
 }
-
 .photo {
   &-1 {
     position: absolute;
@@ -106,7 +103,6 @@ export default {
     }
   }
 }
-
 .title {
   display: flex;
   padding-top: 15rem;
@@ -132,11 +128,117 @@ export default {
     -moz-box-shadow: 1px 8px 24px 3px rgba(0, 0, 0, 0.75);
     box-shadow: 1px 8px 24px 3px rgba(0, 0, 0, 0.75);
   }
-
   & h2 {
     font-size: 3rem;
     width: 60%;
     text-align: justify;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .title {
+    font-size: 20rem;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .photos img {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .title {
+    font-size: 15rem;
+  }
+  .photos img {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .home {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    & div {
+      width: 80%;
+    }
+  }
+  .title {
+    justify-content: center;
+    padding-top: 1rem;
+    & h1 {
+      text-align: center;
+      padding-left: 2rem;
+    }
+  }
+  .info-container {
+    flex-direction: row;
+    justify-content: space-between;
+    & img {
+      width: 35%;
+    }
+  }
+  .photos {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 900px) {
+  .home {
+    height: calc(100vh - 18rem);
+    justify-content: flex-start;
+  }
+  .title {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  .info-container {
+    padding-top: 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .title {
+    & h1 {
+      padding-left: 8rem;
+    }
+  }
+  .info-container {
+    padding-left: 8rem;
+    & img {
+      width: 50%;
+    }
+    & h2 {
+      padding-left: 3rem;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .home {
+    height: 100vh;
+  }
+  .info-container {
+    flex-direction: column;
+    padding-left: 15rem;
+    & img {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      width: 60%;
+    }
+    & h2 {
+      padding-top: 2rem;
+      width: 120%;
+    }
+  }
+  .title {
+    & h1 {
+      padding-left: 15rem;
+    }
+  }
+}
+@media screen and (max-height: 700px) {
+  .info-container {
+    & h2 {
+      padding-top: 2rem;
+      font-size: 2rem;
+    }
   }
 }
 </style>

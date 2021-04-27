@@ -14,12 +14,7 @@
   <div class="testimonials">
     <div class="carousel-view">
       <div class="carousel" tag="div">
-        <div
-          class="card"
-          v-for="test in testimonials"
-          :key="test.id"
-          v-show="displayCard === test.id"
-        >
+        <div class="card" v-for="test in testimonials" :key="test.id" v-show="displayCard === test.id">
           <h3>{{ test.name }}</h3>
           <p>{{ test.testimonial }}</p>
         </div>
@@ -47,8 +42,7 @@ export default {
         {
           id: 0,
           name: 'Ariel Cherry',
-          testimonial:
-            "Very friendly and super quick turn around on a hem for a bridesmaid dress. It's now prefect!",
+          testimonial: "Very friendly and super quick turn around on a hem for a bridesmaid dress. It's now prefect!",
         },
         {
           id: 1,
@@ -95,8 +89,7 @@ export default {
         {
           id: 8,
           name: 'Amy Hall',
-          testimonial:
-            "Kelly is awesome.  She fixed my dress and made it fit perfect and you could never tell it didn't come that way.",
+          testimonial: "Kelly is awesome.  She fixed my dress and made it fit perfect and you could never tell it didn't come that way.",
         },
         {
           id: 9,
@@ -109,10 +102,7 @@ export default {
   },
   methods: {
     next() {
-      if (
-        this.displayCard >= 0 &&
-        this.displayCard <= this.testimonials.length - 2
-      ) {
+      if (this.displayCard >= 0 && this.displayCard <= this.testimonials.length - 2) {
         this.displayCard++;
       } else {
         this.displayCard = 0;
@@ -188,13 +178,6 @@ p {
     text-align: justify;
   }
 }
-.main {
-  transform: scale(1.2);
-  -webkit-box-shadow: 1px 8px 24px 3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1px 8px 24px 3px rgba(0, 0, 0, 0.75);
-  box-shadow: 1px 8px 24px 3px rgba(0, 0, 0, 0.75);
-  z-index: 100;
-}
 .carousel {
   width: 85%;
   height: 100%;
@@ -213,7 +196,7 @@ p {
   }
 
   &-controls {
-    width: 40rem;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -246,4 +229,58 @@ p {
     padding-right: 1rem;
   }
 }
+@media screen and (max-width: 850px) {
+  h3 {
+    font-size: 3.5rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .star-rating,
+  .carousel-view {
+    padding-left: 7rem;
+  }
+  .card {
+    width: 100%;
+  }
+  .carousel {
+    width: 135%;
+
+    &-controls {
+      width: 65%;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .star-rating,
+  .carousel-view {
+    padding-left: 10rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .testimonials {
+    padding-bottom: 15rem;
+  }
+  .star-rating,
+  .carousel-view {
+    padding-left: 13rem;
+  }
+  .carousel {
+    width: 170%;
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+    &-controls {
+      padding-top: 4rem;
+    }
+    &-view {
+      padding-bottom: 5rem;
+    }
+  }
+  .card {
+    height: 190%;
+  }
+}
+/* @media screen and (max-height: ); */
 </style>

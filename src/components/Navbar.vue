@@ -1,5 +1,5 @@
 <template>
-  <div id="nav">
+  <div id="nav" class="main-nav-bar">
     <div class="logo">
       <div class="first-letter">K</div>
       <div class="second-letter">A</div>
@@ -9,17 +9,22 @@
       <router-link class="underline" to="/about">About</router-link>
       <router-link class="underline" to="/pricing">Pricing</router-link>
       <router-link class="underline" to="/gallery">Gallery</router-link>
-      <router-link class="underline" to="/testimonials"
-        >Testimonials</router-link
-      >
+      <router-link class="underline" to="/testimonials">Testimonials</router-link>
       <router-link class="underline" to="/contact">Contact</router-link>
     </div>
+  </div>
+  <div class="mobile-nav-bar">
+    <Hamburger />
   </div>
 </template>
 
 <script>
+import Hamburger from './Hamburger';
 export default {
   name: 'Navbar',
+  components: {
+    Hamburger,
+  },
 };
 </script>
 
@@ -116,6 +121,33 @@ a {
         transform: scaleX(1);
       }
     }
+  }
+}
+@media screen and (max-width: 1700px) {
+  .nav-links {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .main-nav-bar {
+    visibility: hidden;
+  }
+  .mobile-nav-bar {
+    visibility: visible;
+  }
+  a.router-link-exact-active {
+    &:before,
+    &:after {
+      visibility: hidden !important;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-nav-bar {
+    visibility: visible;
+  }
+  .mobile-nav-bar {
+    visibility: hidden;
   }
 }
 </style>
