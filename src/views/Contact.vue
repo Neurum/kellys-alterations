@@ -3,54 +3,16 @@
     <div class="row">
       <div class="contact">
         <div class="contact-form">
-          <form
-            id="fs-frm"
-            class="form"
-            name="simple-contact-form"
-            accept-charset="utf-8"
-            action="https://formspree.io/f/xeqvejnb"
-            method="post"
-          >
+          <form id="fs-frm" class="form" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqvejnb" method="post">
             <h2>Book now and see what I can do for you!</h2>
             <fieldset class="form-group">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                class="form__input"
-                placeholder="Full Name"
-                autocomplete="off"
-                required
-              />
+              <input type="text" name="name" id="name" class="form__input" placeholder="Full Name" autocomplete="off" required />
               <label for="name" class="form__label">Full Name</label>
-              <input
-                type="email"
-                name="_replyto"
-                class="form__input"
-                id="email-address"
-                placeholder="Email"
-                autocomplete="off"
-                required
-              />
-              <label for="email-address" class="form__label"
-                >Email Address</label
-              >
-              <textarea
-                rows="5"
-                name="message"
-                id="message"
-                class="form__textarea"
-                placeholder="Message"
-                autocomplete="off"
-                required
-              ></textarea>
+              <input type="email" name="_replyto" class="form__input" id="email-address" placeholder="Email" autocomplete="off" required />
+              <label for="email-address" class="form__label">Email Address</label>
+              <textarea rows="5" name="message" id="message" class="form__textarea" placeholder="Message" autocomplete="off" required></textarea>
               <label for="message" class="form__label">Message</label>
-              <input
-                type="hidden"
-                name="_subject"
-                id="email-subject"
-                value="Contact Form Submission"
-              />
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
             </fieldset>
             <input type="submit" value="Submit" class="form-submit" />
           </form>
@@ -81,12 +43,7 @@ export default {
 .contact {
   width: 61.9%;
   height: 60rem;
-  background-image: linear-gradient(
-      105deg,
-      rgba(255, 255, 255, 0.9) 0%,
-      rgba(255, 255, 255, 0.9) 50%,
-      transparent 50.1%
-    ),
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50.1%),
     url(../assets/images/office.jpg);
   background-size: contain;
   border-radius: 10px;
@@ -187,6 +144,30 @@ fieldset {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
       border-bottom: 3px solid #2f2f2f;
+    }
+  }
+}
+@media screen and (max-width: 1800px) {
+  .contact {
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%, transparent 50.1%),
+      url(../assets/images/office.jpg);
+
+    &-form {
+      width: 70%;
+    }
+  }
+}
+@media screen and (max-width: 1275px) {
+  .contact {
+    height: 80rem;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .contact {
+    width: 95%;
+    &-section {
+      padding-bottom: 30rem;
     }
   }
 }
