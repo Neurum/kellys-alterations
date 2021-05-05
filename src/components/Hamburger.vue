@@ -54,7 +54,7 @@ export default {
   background: #2f2f2f;
   position: fixed;
   top: 20px;
-  right: calc(100% - 98.9%);
+  right: 1.1%;
   z-index: 99;
 }
 .menu-btn {
@@ -145,5 +145,16 @@ nav {
 .translateX-leave-active {
   right: -100%;
   opacity: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-btn {
+    right: calc(100% - 98%);
+  }
+}
+@media screen and (max-width: 850px) {
+  .nav-btn {
+    right: calc(100% - 90%);
+  }
 }
 </style>

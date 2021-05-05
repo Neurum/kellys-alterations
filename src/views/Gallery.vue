@@ -1,7 +1,7 @@
 <template>
   <div class="gallery">
     <figure class="gallery__item gallery__item--1" @click.prevent="lightbox">
-      <img src="../assets/images/gallery-1.jpg" alt="gallery image 1" class="gallery__img" id="gallery-1" />
+      <img src="../assets/images/gallery-1.jpg" alt="gallery image 1" class="gallery__img" />
     </figure>
     <figure class="gallery__item gallery__item--2" @click.prevent="lightbox">
       <img src="../assets/images/gallery-2.jpg" alt="gallery image 2" class="gallery__img" />
@@ -50,7 +50,7 @@
     </figure>
 
     <transition name="zoom" type="animation" appear>
-      <div class="lightbox" v-show="clicked">
+      <div class="lightbox" v-show="clicked" @click="close">
         <div class="photo">
           <img :src="clickedImg" />
           <div class="close">
@@ -239,6 +239,87 @@ export default {
   }
   to {
     transform: scale(0);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(30, 5.58vh);
+
+    &__item {
+      &--1 {
+        grid-row: 1 / span 6;
+        grid-column: 1 / span 5;
+      }
+      &--2 {
+        grid-row: 13 / span 7;
+        grid-column: 1 / span 8;
+      }
+      &--3 {
+        grid-row: 1 / span 7;
+        grid-column: 6 / span 5;
+      }
+      &--4 {
+        grid-row: 1 / span 5;
+        grid-column: 11 / span 5;
+      }
+      &--5 {
+        grid-row: 20 / span 5;
+        grid-column: 1 / span 4;
+      }
+      &--6 {
+        grid-row: 7 / span 6;
+        grid-column: 1 / span 5;
+      }
+      &--7 {
+        grid-row: 14 / span 4;
+        grid-column: 11 / span 5;
+      }
+      &--8 {
+        grid-row: 13 / span 5;
+        grid-column: 9 / span 2;
+      }
+      &--9 {
+        grid-row: 20 / span 5;
+        grid-column: 5 / span 4;
+      }
+      &--10 {
+        grid-row: 8 / span 5;
+        grid-column: 6 / span 5;
+      }
+      &--11 {
+        grid-row: 23 / span 7;
+        grid-column: 13 / span 3;
+      }
+      &--12 {
+        grid-row: 10 / span 4;
+        grid-column: 11 / span 5;
+      }
+      &--13 {
+        grid-row: 6 / span 4;
+        grid-column: 11 / span 5;
+      }
+      &--14 {
+        grid-row: 25 / span 5;
+        grid-column: 1 / span 8;
+      }
+      &--15 {
+        grid-row: 23 / span 7;
+        grid-column: 9 / span 4;
+      }
+      &--16 {
+        grid-row: 18 / span 5;
+        grid-column: 9 / span 7;
+      }
+    }
+  }
+  .lightbox {
+    width: calc(100% - 2rem);
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 </style>

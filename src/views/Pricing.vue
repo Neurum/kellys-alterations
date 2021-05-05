@@ -191,8 +191,7 @@
         <h6 class="content-last">Ornaments are $8-$15 per ornament</h6>
 
         <p>
-          * Free poem, monogram or percentage off with 4 or more pillows in 1
-          order.
+          * Free poem, monogram or percentage off with 4 or more pillows in 1 order.
         </p>
       </div>
     </div>
@@ -234,8 +233,7 @@
           Monogram/Initials&nbsp;&nbsp;&nbsp;&nbsp;$6
         </h6>
         <p>
-          * Price for all stuffed animals will depend on the fabric, the eyes,
-          nose and the intricacy of the animal itself.
+          * Price for all stuffed animals will depend on the fabric, the eyes, nose and the intricacy of the animal itself.
         </p>
       </div>
     </div>
@@ -271,22 +269,18 @@
         </table>
       </div>
       <p class="quilt-content">
-        * The price range depends on the type of quilt, the backing material,
-        borders and cornerstones around each shirt, number of color patterns or
+        * The price range depends on the type of quilt, the backing material, borders and cornerstones around each shirt, number of color patterns or
         type of quilting technique(Free motion or Stitch in the Ditch).
       </p>
       <p class="quilt-content">
-        * Free motion are swirls by free hand with machine assistance to quilt
-        the layers together.
+        * Free motion are swirls by free hand with machine assistance to quilt the layers together.
       </p>
       <p class="quilt-content">
-        * Stitch in the Ditch is also sewn by machine assistance but it just
-        follows each share to quilt the layers. This is less costly because it
+        * Stitch in the Ditch is also sewn by machine assistance but it just follows each share to quilt the layers. This is less costly because it
         takes less time.
       </p>
       <p class="quilt-content">
-        !* I can work on a budget. If you have a price range in mind I can show
-        you what I could do for the amount you're more comfortable with
+        !* I can work on a budget. If you have a price range in mind I can show you what I could do for the amount you're more comfortable with
       </p>
     </div>
   </div>
@@ -305,8 +299,8 @@ export default {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  column-gap: 10px;
-  row-gap: 10px;
+  column-gap: 1rem;
+  row-gap: 1rem;
 }
 
 h1 {
@@ -432,5 +426,177 @@ table {
 .quilts {
   grid-column: 11 / span 3;
   grid-row: 1 / span 8;
+}
+@media screen and (max-width: 1800px) {
+  h6,
+  td {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1650px) {
+  h6,
+  td {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .service {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  h6,
+  td {
+    font-size: 1.7rem;
+  }
+  .pricing {
+    height: 100%;
+    padding-bottom: 5rem;
+    grid-template-rows: repeat(11, 1fr);
+  }
+  .tops {
+    grid-column: 2 / span 6;
+    grid-row: 1 / span 3;
+  }
+  .bottoms {
+    grid-column: 2 / span 6;
+    grid-row: 4 / span 3;
+  }
+  .dresses {
+    grid-column: 8 / span 6;
+    grid-row: 4 / span 3;
+  }
+  .coats {
+    grid-column: 8 / span 6;
+    grid-row: 1 / span 3;
+  }
+  .pillows {
+    grid-column: 2 / span 6;
+    grid-row: 7 / span 3;
+  }
+  .bears {
+    grid-column: 8 / span 6;
+    grid-row: 7 / span 2;
+  }
+  .quilts {
+    grid-column: 8 / span 6;
+    grid-row: 9 / span 3;
+  }
+  .other {
+    grid-column: 2 / span 6;
+    grid-row: 10 / span 2;
+  }
+}
+@media screen and (max-width: 1050px) {
+  h6,
+  td {
+    font-size: 1.5rem;
+  }
+  .pricing {
+    grid-template-rows: repeat(10, 1fr);
+  }
+  .tops {
+    grid-column: 2 / span 6;
+    grid-row: 1 / span 2;
+  }
+  .bottoms {
+    grid-column: 2 / span 6;
+    grid-row: 3 / span 3;
+  }
+  .dresses {
+    grid-column: 8 / span 6;
+    grid-row: 3 / span 3;
+  }
+  .coats {
+    grid-column: 8 / span 6;
+    grid-row: 1 / span 2;
+  }
+  .pillows {
+    grid-column: 2 / span 6;
+    grid-row: 6 / span 3;
+  }
+  .bears {
+    grid-column: 8 / span 6;
+    grid-row: 6 / span 2;
+  }
+  .quilts {
+    grid-column: 8 / span 6;
+    grid-row: 8 / span 3;
+  }
+  .other {
+    grid-column: 2 / span 6;
+    grid-row: 9 / span 2;
+  }
+}
+@media screen and (max-width: 850px) {
+  .pricing {
+    grid-template-rows: repeat(9, 1fr);
+  }
+  .bottoms {
+    grid-column: 2 / span 6;
+    grid-row: 3 / span 2;
+  }
+  .dresses {
+    grid-column: 8 / span 6;
+    grid-row: 3 / span 2;
+  }
+  .pillows {
+    grid-column: 2 / span 6;
+    grid-row: 5 / span 3;
+  }
+  .bears {
+    grid-column: 8 / span 6;
+    grid-row: 5 / span 2;
+  }
+  .quilts {
+    grid-column: 8 / span 6;
+    grid-row: 7 / span 3;
+  }
+  .other {
+    grid-column: 2 / span 6;
+    grid-row: 8 / span 2;
+  }
+}
+@media screen and (max-width: 420px) {
+  h6,
+  td {
+    font-size: 1.4rem;
+  }
+  .pricing {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+  }
+  .tops {
+    grid-column: 2 / span 6;
+    grid-row: 1 / span 2;
+  }
+  .bottoms {
+    grid-column: 2 / span 6;
+    grid-row: 3 / span 2;
+  }
+  .coats {
+    grid-column: 2 / span 6;
+    grid-row: 5 / span 2;
+  }
+  .dresses {
+    grid-column: 2 / span 6;
+    grid-row: 7 / span 2;
+  }
+  .pillows {
+    grid-column: 2 / span 6;
+    grid-row: 9 / span 3;
+  }
+  .bears {
+    grid-column: 2 / span 6;
+    grid-row: 12 / span 2;
+  }
+  .other {
+    grid-column: 2 / span 6;
+    grid-row: 17 / span 2;
+  }
+  .quilts {
+    grid-column: 2 / span 6;
+    grid-row: 14 / span 3;
+  }
 }
 </style>
