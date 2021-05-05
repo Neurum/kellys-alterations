@@ -245,6 +245,8 @@ export default {
   .gallery {
     grid-template-columns: repeat(15, 1fr);
     grid-template-rows: repeat(30, 5.58vh);
+    height: 100%;
+    width: calc(100vw - 2rem);
 
     &__item {
       &--1 {
@@ -314,12 +316,38 @@ export default {
     }
   }
   .lightbox {
-    width: calc(100% - 2rem);
-    height: 100vh;
+    width: 100vw;
+    height: 100%;
     position: fixed;
     top: 50%;
     left: 50%;
+    border-radius: 0;
     transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .gallery {
+    width: calc(100vw - 2.5rem);
+  }
+  .lightbox {
+    left: 48.7%;
+  }
+}
+@media screen and (max-width: 775px) {
+  .lightbox {
+    left: 47.6%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .lightbox {
+    left: 38.2%;
+  }
+  .photo {
+    width: 90%;
+    & img {
+      width: 100%;
+    }
   }
 }
 </style>

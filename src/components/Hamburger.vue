@@ -154,7 +154,7 @@ nav {
 }
 @media screen and (max-width: 850px) {
   .nav-btn {
-    right: calc(100% - 90%);
+    right: 10%;
   }
 }
 </style>
