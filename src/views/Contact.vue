@@ -43,8 +43,7 @@ export default {
 .contact {
   width: 61.9%;
   height: 60rem;
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50.1%),
-    url(../assets/images/office.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50.1%), url(../assets/images/office.jpg);
   background-size: contain;
   border-radius: 10px;
   -webkit-box-shadow: 1px 8px 24px 3px rgba(0, 0, 0, 0.75);
@@ -149,8 +148,7 @@ fieldset {
 }
 @media screen and (max-width: 1800px) {
   .contact {
-    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%, transparent 50.1%),
-      url(../assets/images/office.jpg);
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%, transparent 50.1%), url(../assets/images/office.jpg);
 
     &-form {
       width: 70%;
@@ -169,6 +167,18 @@ fieldset {
     &-section {
       padding-bottom: 30rem;
     }
+  }
+}
+
+@media screen and (max-height: 812px) {
+  .contact-section {
+    height: calc(100vh - 20rem);
+  }
+}
+
+@media screen and (max-height: 740px) {
+  .contact-section {
+    height: calc(100vh - 1rem);
   }
 }
 </style>

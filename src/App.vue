@@ -23,6 +23,11 @@ export default {
   font-size: 62.5%;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;

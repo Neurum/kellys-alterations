@@ -6,10 +6,9 @@
     <div class="content">
       <img src="../assets/images/kelly-working.jpg" alt="kelly-working" />
       <p>
-        Clothing alterations can make a huge difference in your appearance and even minor alterations can make a huge impact. I have been sewing for
-        20 years as a hobby and turned my passion into a career 8 years ago. I can alter clothing for men, women and children and have completed a
-        wide variety of projects. Creativity is my strength so I can take your loved ones clothing and make memory bears and memory pillows, as well
-        as memory t-shirts, quilts or blankets. I am open Tuesday- Saturday and book by appointment only.
+        Clothing alterations can make a huge difference in your appearance and even minor alterations can make a huge impact. I have been sewing for 20 years as a hobby and turned my passion into a
+        career 8 years ago. I can alter clothing for men, women and children and have completed a wide variety of projects. Creativity is my strength so I can take your loved ones clothing and make
+        memory bears and memory pillows, as well as memory t-shirts, quilts or blankets. I am open Tuesday- Saturday and book by appointment only.
       </p>
     </div>
   </div>
@@ -33,6 +32,11 @@ export default {
   & h1 {
     font-size: 6rem;
   }
+}
+
+.title {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
 }
 
 .content {
@@ -136,7 +140,7 @@ export default {
 }
 @media screen and (max-width: 600px) {
   .about {
-    padding: 5rem 0 5rem 10rem;
+    padding: 10rem 5rem 5rem 5rem;
   }
   .content {
     & img {
@@ -160,16 +164,33 @@ export default {
 @media screen and (max-width: 400px) {
   .content {
     & img {
-      width: 180%;
+      width: 80%;
     }
     & p {
-      width: 180%;
+      width: 80%;
     }
   }
 }
 @media screen and (max-height: 700px) {
   .about {
-    padding: 10rem 0 10rem 15rem;
+    padding: 15rem 15rem 10rem 15rem;
+    & h1 {
+      font-size: 6rem;
+    }
+  }
+  .content {
+    & img {
+      width: 300%;
+    }
+    & p {
+      font-size: 1.75rem;
+      width: 300%;
+    }
+  }
+}
+@media screen and (max-height: 600px) {
+  .about {
+    padding: 15rem 15rem 10rem 15rem;
     & h1 {
       font-size: 3.5rem;
     }
@@ -179,25 +200,8 @@ export default {
       width: 300%;
     }
     & p {
-      font-size: 1.75rem;
-      width: 350%;
-    }
-  }
-}
-@media screen and (max-height: 600px) {
-  .about {
-    padding: 10rem 0 10rem 15rem;
-    & h1 {
-      font-size: 3.5rem;
-    }
-  }
-  .content {
-    & img {
-      width: 350%;
-    }
-    & p {
       font-size: 1.5rem;
-      width: 400%;
+      width: 300%;
     }
   }
 }

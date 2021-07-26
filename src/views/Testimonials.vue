@@ -59,8 +59,7 @@ export default {
         {
           id: 3,
           name: 'Barbara Williams',
-          testimonial:
-            'Best alterations around.  I had a lot of pants that needed hemming and she was able to get them all done in a very timely manner.',
+          testimonial: 'Best alterations around.  I had a lot of pants that needed hemming and she was able to get them all done in a very timely manner.',
         },
         {
           id: 4,
@@ -94,8 +93,7 @@ export default {
         {
           id: 9,
           name: 'Samantha Sellers Morris',
-          testimonial:
-            'She literally took my dress apart, pulled the lace and put it back together in no time! My dress fit perfect and was everything I wanted it to be.',
+          testimonial: 'She literally took my dress apart, pulled the lace and put it back together in no time! My dress fit perfect and was everything I wanted it to be.',
         },
       ],
     };
@@ -263,9 +261,13 @@ p {
   .testimonials {
     padding-bottom: 15rem;
   }
+  h4 {
+    font-size: 1.9rem;
+  }
   .star-rating,
   .carousel-view {
-    padding-left: 13rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
   .carousel {
     width: 170%;

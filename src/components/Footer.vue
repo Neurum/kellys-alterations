@@ -91,7 +91,7 @@
 }
 @media screen and (max-width: 500px) {
   .footer {
-    padding-left: 12rem;
+    padding-left: 0;
     padding-top: 5rem;
   }
   .socials {

@@ -211,20 +211,26 @@ export default {
   }
 }
 @media screen and (max-width: 500px) {
+  h1 {
+    padding-right: 15rem;
+    width: 120%;
+    font-size: 7rem;
+  }
   .home {
     height: 100vh;
   }
   .info-container {
     flex-direction: column;
-    padding-left: 15rem;
+    padding-right: 8rem;
     & img {
       margin-top: 0;
       margin-bottom: 1rem;
       width: 60%;
     }
     & h2 {
+      padding-right: 4rem;
       padding-top: 2rem;
-      width: 120%;
+      width: 100%;
     }
   }
   .title {
